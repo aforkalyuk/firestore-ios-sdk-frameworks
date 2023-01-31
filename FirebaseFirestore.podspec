@@ -44,7 +44,7 @@ Pod::Spec.new do |s|
         false
       elsif hasRNFBFirestore && name.include?('FirebaseFirestoreSwift')
         false
-      elsif ENV["SKIP_FIREBASE_FIRESTORE_SWIFT"] && name.include?('FirebaseFirestoreSwift')
+      elsif name.include?('FirebaseFirestoreSwift')
         false
       else
         true
