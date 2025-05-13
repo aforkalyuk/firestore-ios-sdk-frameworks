@@ -49,7 +49,16 @@ Pod::Spec.new do |s|
   }
 
   s.dependency 'FirebaseFirestoreGRPCCPPBinary', firebase_firestore_grpc_version
-  s.dependency 'FirebaseFirestoreAbseilBinary', firebase_firestore_abseil_version
+  
+  abseil_version = '~> 1.2024072200.0'
+  s.dependency 'abseil/algorithm', abseil_version
+  s.dependency 'abseil/base', abseil_version
+  s.dependency 'abseil/container/flat_hash_map', abseil_version
+  s.dependency 'abseil/memory', abseil_version
+  s.dependency 'abseil/meta', abseil_version
+  s.dependency 'abseil/strings/strings', abseil_version
+  s.dependency 'abseil/time', abseil_version
+  s.dependency 'abseil/types', abseil_version
 
   s.dependency 'FirebaseCore', firebase_firestore_version
   s.dependency 'leveldb-library', firebase_firestore_leveldb_version
