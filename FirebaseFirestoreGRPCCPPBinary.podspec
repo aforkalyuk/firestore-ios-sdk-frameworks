@@ -1,6 +1,4 @@
 firebase_firestore_version='11.12.0'
-firebase_firestore_abseil_url='https://github.com/invertase/firestore-ios-sdk-frameworks/raw/11.12.0/Archives/abseil.zip'
-firebase_firestore_abseil_version='1.2024072200.0'
 firebase_firestore_grpc_version='1.69.0'
 firebase_firestore_grpc_version_url='https://github.com/invertase/firestore-ios-sdk-frameworks/raw/11.12.0/Archives/grpc.zip'
 firebase_firestore_grpc_ccp_version_url='https://github.com/invertase/firestore-ios-sdk-frameworks/raw/11.12.0/Archives/grpcpp.zip'
@@ -45,5 +43,14 @@ Pod::Spec.new do |s|
   }
 
   s.dependency 'FirebaseFirestoreGRPCCoreBinary', firebase_firestore_grpc_version
-  s.dependency 'FirebaseFirestoreAbseilBinary', firebase_firestore_abseil_version
+  
+  abseil_version = '~> 1.2024072200.0'
+  s.dependency 'abseil/algorithm', abseil_version
+  s.dependency 'abseil/base', abseil_version
+  s.dependency 'abseil/container/flat_hash_map', abseil_version
+  s.dependency 'abseil/memory', abseil_version
+  s.dependency 'abseil/meta', abseil_version
+  s.dependency 'abseil/strings/strings', abseil_version
+  s.dependency 'abseil/time', abseil_version
+  s.dependency 'abseil/types', abseil_version
 end
