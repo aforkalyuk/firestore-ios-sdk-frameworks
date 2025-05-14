@@ -48,7 +48,7 @@ Pod::Spec.new do |s|
 
   s.dependency 'FirebaseFirestoreGRPCCPPBinary', firebase_firestore_grpc_version
   
-  abseil_version = '~> 1.2024072200.0'
+  abseil_version = '~> 1.20240722.0'
   s.dependency 'abseil/algorithm', abseil_version
   s.dependency 'abseil/base', abseil_version
   s.dependency 'abseil/container/flat_hash_map', abseil_version
